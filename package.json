@@ -1,0 +1,30 @@
+{
+  "name": "reason-electron-boilerplate",
+  "private": false,
+  "version": "0.0.0",
+  "description": "Simplest example of reasonml+bucklescript+electron-application",
+  "main": "main.js",
+  "scripts": {
+    "react-start": "react-scripts start",
+    "start": "electron .",
+    "clean": "bsb -clean-world",
+    "start-setup": "concurrently \"webpack -w\" \"bsb -make-world -w\""
+  },
+  "author": "Sharankumar Narayan Huggi",
+  "license": "MIT",
+  "dependencies": {
+    "@glennsl/bs-json": "latest",
+    "bs-platform": "latest",
+    "bs-fetch": "latest",
+    "reason-react": "^0.5.0",
+    "react-scripts": "latest",
+    "concurrently": "latest",
+    "wait-on": "latest"
+  },
+  "devDependencies": {
+    "webpack-cli": "latest",
+    "electron": "latest",
+    "electron-builder": "latest"
+  }
+}
+
